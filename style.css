@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'main';
+    font-weight: 400;
+    font-style: normal;
+    src:
+        url('ofont.ru_Garet.ttf')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'main';
+}
+
+
+
+.time {
+    margin: 0;
+    padding: 0;
+    font-family: 'main';
+    background-color: rgb(24,149,96);
+    color: white;
+    font-size: xx-large;
+    height: 20%;
+    animation: up 1s ease-out;
+}
+
+@keyframes up {
+    from {
+        transform: translate(0, -100px);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+
+.trimester1 {
+    margin-left: 5%;
+    padding-left: 10px;
+    font-family: 'main';
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
+    height: 250px;
+    width: 800px;
+    outline: 2px solid #000;
+    border-radius: 10px;
+    background-image: url(./I.jpeg);
+    float: left;
+    animation: tr1 1s;
+    transition: transform 0.25s;
+}
+
+.trimester1:hover {
+    transform: scale(1.05);
+}
+
+.trimester2 {
+    margin-left: 5%;
+    padding-left: 10px;
+    font-family: 'main';
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
+    height: 250px;
+    width: 800px;
+    outline: 2px solid #000;
+    border-radius: 10px;
+    background-image: url(./II.jpeg);
+    float: left;
+    animation: tr2 1.5s;
+    margin-top: 50px;
+    display: block;
+    transition: transform 0.25s;
+}
+
+
+.trimester2:hover {
+    transform: scale(1.05);
+    cursor:not-allowed;
+}
+
+.trimester3 {
+    margin-left: 5%;
+    padding-left: 10px;
+    font-family: 'main';
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
+    height: 250px;
+    width: 800px;
+    outline: 2px solid #000;
+    border-radius: 10px;
+    background-image: url(./III.jpeg);
+    float: left;
+    animation: tr3 2s;
+    margin-top: 50px;
+    transition: transform 0.25s;
+}
+
+.trimester3:hover {
+    transform: scale(1.05);
+    cursor:not-allowed;
+}
+
+
+.no1 {
+    font-size: x-large;
+    margin-left: 1%;
+    background: gold;
+    width: 40px;
+    height: 34px;
+    padding-left: 9px;
+    border-radius: 30px;
+    display: inline-block;
+    animation: shine 2s alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shine {
+    0% {
+        background: rgb(255, 255, 255);
+    }
+    25% {
+        background: rgb(0, 4, 255)
+    }
+    50% {
+        background: rgb(255, 0, 0);
+    }
+    75% {
+        background: rgb(255, 255, 255)
+    }
+    100% {
+        background: gold;
+    }
+}
+
+.no2 {
+    font-size: x-large;
+    margin-left: 1%;
+    background: silver;
+    width: 40px;
+    height: 34px;
+    padding-left: 7px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.no3 {
+    font-size: x-large;
+    margin-left: 1%;
+    background: #cd7f32;
+    width: 40px;
+    height: 34px;
+    padding-left: 7px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.nox {
+    font-size: x-large;
+    margin-left: 1%;
+    width: 40px;
+    height: 34px;
+    padding-left: 7px;
+    border-radius: 30px;
+    display: inline-block;
+    outline: 2px solid #000;
+}
+
+.pts {
+    font-size:x-large;
+    color:gray;
+    display: inline-block;
+    opacity: 0;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.no1:hover+ .pts{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.no2:hover+ .pts{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.no3:hover+ .pts{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.rating {
+    margin-right: 20%;
+    padding-left: 10px;
+    font-family: 'main';
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
+    height: 1000px;
+    width: 800px;
+    outline: 2px solid #000;
+    border-radius: 10px;
+    float: right;
+    animation: rank 1s;
+    transition: transform 0.25s;
+}
+
+.rating:hover {
+    transform: scale(1.05);
+}
+
+
+@keyframes tr1 {
+    from {
+        transform: translate(-1000px, 0);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes tr2 {
+    from {
+        transform: translate(-1000px, 0);
+        opacity: 1;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes tr3 {
+    from {
+        transform: translate(-1000px, 0);
+        opacity: 1;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes rank {
+    from {
+        transform: translate(1000px, 0);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}

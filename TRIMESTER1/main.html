@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>1</title>
+</head>
+<body>
+	<script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Sep 1, 2023 00:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var countdownfunction = setInterval(function() {
+        
+            // Get todays date and time
+
+            var now = new Date().getTime();
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+            
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = "До открытия сайта: " + days + " : " + hours + " : " + minutes + " : " + seconds;
+            
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(countdownfunction);
+                document.getElementById("demo").innerHTML = "Скоро.";
+            }
+        }, 1000);
+
+        var countDownDate2 = new Date("Sep 2, 2023 00:00:00").getTime();
+
+        var countdownfunction2 = setInterval(function() {
+        
+        // Get todays date and time
+
+        var now2 = new Date().getTime();
+        // Find the distance between now an the count down date
+        var distance2 = countDownDate2 - now2;
+        
+        // Time calculations for days, hours, minutes and seconds
+        var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+        var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
+        
+        // Output the result in an element with id="demo"
+        document.getElementById("demo2").innerHTML = days2 + " : " + hours2 + " : " + minutes2 + " : " + seconds2;
+        
+        // If the count down is over, write some text 
+        if (distance2 < 0) {
+            clearInterval(countdownfunction);
+            document.getElementById("demo2").innerHTML = "Скоро.";
+        }
+    }, 1000);
+        </script>
+
+
+        
+        <div class="trimester1">Триместр I <i> // 0 игр</i><br>
+            <p id="demo2"></p>
+        ????????<div class="no1">#1</div><div class="pts"> 0 pts</div><br>
+        ????????<div class="no2">#2</div><div class="pts"> 0 pts</div><br>
+        ????????<div class="no3">#3</div><div class="pts"> 0 pts</div>
+    </div>
+    
+
+
+    <div class="rating">Рейтинг<br>
+        ????????<div class="no1">#1</div><div class="pts"> 0 pts</div><br>
+        ????????<div class="no2">#2</div><div class="pts"> 0 pts</div><br>
+        ????????<div class="no3">#3</div><div class="pts"> 0 pts</div><br>
+        ????????<div class="nox">#4</div><div class="pts"> 0 pts</div><br>
+        ????????<div class="nox">#5</div><div class="pts"> 0 pts</div><br></div>
+
+
+        <br><div class="trimester2">Триместр II <i> // 0 игр</i><br>
+        <p id="demo2"></p>
+    ????????<div class="no1">#1</div><div class="pts"> 0 pts</div><br>
+    ????????<div class="no2">#2</div><div class="pts"> 0 pts</div><br>
+    ????????<div class="no3">#3</div><div class="pts"> 0 pts</div>
+</div>
+
+    <br><div class="trimester3">Триместр III <i> // 0 игр</i><br>
+        <p id="demo2"></p>
+    ????????<div class="no1">#1</div><div class="pts"> 0 pts</div><br>
+    ????????<div class="no2">#2</div><div class="pts"> 0 pts</div><br>
+    ????????<div class="no3">#3</div><div class="pts"> 0 pts</div></div>
+
+
+</div>
+</body>
+</html>
